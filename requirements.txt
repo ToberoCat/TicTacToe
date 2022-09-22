@@ -1,0 +1,5 @@
+gym==0.26.1
+keras==2.8.0
+keras_rl2==1.0.5
+numpy==1.23.3
+tensorflow==2.8.0
