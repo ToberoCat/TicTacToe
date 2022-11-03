@@ -1,0 +1,26 @@
+2022-11-03 21:24:58,108 INFO    MainThread:28304 [wandb_setup.py:_flush():75] Loading settings from C:\Users\Tobias\.config\wandb\settings
+2022-11-03 21:24:58,108 INFO    MainThread:28304 [wandb_setup.py:_flush():75] Loading settings from C:\Users\Tobias\Desktop\Development\Python\TicTacToe\wandb\settings
+2022-11-03 21:24:58,108 INFO    MainThread:28304 [wandb_setup.py:_flush():75] Loading settings from environment variables: {}
+2022-11-03 21:24:58,108 WARNING MainThread:28304 [wandb_setup.py:_flush():75] Could not find program at -m src.train_ai
+2022-11-03 21:24:58,108 INFO    MainThread:28304 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program_relpath': None, 'program': '-m src.train_ai'}
+2022-11-03 21:24:58,108 INFO    MainThread:28304 [wandb_init.py:_log_setup():405] Logging user logs to C:\Users\Tobias\Desktop\Development\Python\TicTacToe\wandb\run-20221103_212458-1dv139ky\logs\debug.log
+2022-11-03 21:24:58,109 INFO    MainThread:28304 [wandb_init.py:_log_setup():406] Logging internal logs to C:\Users\Tobias\Desktop\Development\Python\TicTacToe\wandb\run-20221103_212458-1dv139ky\logs\debug-internal.log
+2022-11-03 21:24:58,109 INFO    MainThread:28304 [wandb_init.py:init():439] calling init triggers
+2022-11-03 21:24:58,109 INFO    MainThread:28304 [wandb_init.py:init():442] wandb.init called with sweep_config: {}
+config: {}
+2022-11-03 21:24:58,109 INFO    MainThread:28304 [wandb_init.py:init():492] starting backend
+2022-11-03 21:24:58,109 INFO    MainThread:28304 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=spawn, using: spawn
+2022-11-03 21:24:58,116 INFO    MainThread:28304 [backend.py:ensure_launched():219] starting backend process...
+2022-11-03 21:24:58,176 INFO    MainThread:28304 [backend.py:ensure_launched():224] started backend process with pid: 29704
+2022-11-03 21:24:58,177 INFO    MainThread:28304 [wandb_init.py:init():501] backend started and connected
+2022-11-03 21:24:58,182 INFO    MainThread:28304 [wandb_init.py:init():565] updated telemetry
+2022-11-03 21:24:58,237 INFO    MainThread:28304 [wandb_init.py:init():596] communicating run to backend with 30 second timeout
+2022-11-03 21:25:01,978 INFO    MainThread:28304 [wandb_run.py:_on_init():1759] communicating current version
+2022-11-03 21:25:02,092 INFO    MainThread:28304 [wandb_run.py:_on_init():1763] got version response upgrade_message: "wandb version 0.13.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2022-11-03 21:25:02,093 INFO    MainThread:28304 [wandb_init.py:init():625] starting run threads in backend
+2022-11-03 21:25:02,281 INFO    MainThread:28304 [wandb_run.py:_console_start():1733] atexit reg
+2022-11-03 21:25:02,282 INFO    MainThread:28304 [wandb_run.py:_redirect():1606] redirect: SettingsConsole.WRAP
+2022-11-03 21:25:02,282 INFO    MainThread:28304 [wandb_run.py:_redirect():1643] Wrapping output streams.
+2022-11-03 21:25:02,283 INFO    MainThread:28304 [wandb_run.py:_redirect():1667] Redirects installed.
+2022-11-03 21:25:02,284 INFO    MainThread:28304 [wandb_init.py:init():664] run started, returning control to user process

@@ -1,9 +1,15 @@
-from typing import Optional, Tuple
+import os
+from typing import Optional
+
+from wandb.keras import WandbCallback
+import wandb
 
 import numpy as np
 from gym import Env
 from gym.spaces import Discrete, Box
+from rl.callbacks import FileLogger, ModelIntervalCheckpoint
 
+from src.Callbacks import BestModelCallback
 from src.Game import GameEnv, flatten_board
 from src.Actor.Bot import TrainingBot, PretrainedBot, Bot
 from src.Actor.BaseActor import BaseActor
@@ -15,8 +21,8 @@ WON_REWARD = 1
 LOSE_REWARD = -1
 DRAW_REWARD = -0.01
 INVALID_INPUT_REWARD = -5
-EPISODES = 100
-MODEL_PATH = "res/bot/test"
+EPISODES = 1e6
+MODEL_PATH = "res/bot/1Mio"
 
 
 class TrainEnv(Env):
@@ -29,6 +35,7 @@ class TrainEnv(Env):
         self.counter = 0
 
     def step(self, action: int):
+        info = {"wins": 0, "draws": 0}
         x = action // 3
         y = action % 3
 
@@ -48,22 +55,28 @@ class TrainEnv(Env):
         state = self.game.check_game_state(current_tile).value
         if state == GameState.WON.value:
             reward += 9 + WON_REWARD - self.counter
+            info["wins"] = 1
             done = True
         elif state == GameState.DRAW.value:
             done = True
-            reward -= DRAW_REWARD
+            info["draws"] = 1
+            reward += DRAW_REWARD
 
         state = self.game.check_game_state(opposite_tile).value
         if state == GameState.WON.value:
             reward -= LOSE_REWARD
+            info["wins"] = 1
             done = True
 
         if self.counter >= 9:
             done = True
+            info["draws"] = 1
             reward += DRAW_REWARD
 
-        info = {}
+        info["placed-items"] = self.counter
 
+        if done:
+            wandb.log(info)
         return flatten_board(self.game.board, current_tile), reward, done, info
 
     def reset(
@@ -127,7 +140,23 @@ class BotTrainer:
         env = TrainEnv()
         bot.model.summary()
 
-        bot.dqn.fit(env, nb_steps=self.episodes, visualize=False, verbose=1)
+        if not os.path.exists(self.model_path + "/last"):
+            os.makedirs(self.model_path + "/last")
+
+        wandb.config = {
+            "episodes": EPISODES
+        }
+
+        callbacks = [
+            BestModelCallback(self.model_path + "/best"),
+            ModelIntervalCheckpoint(self.model_path + "/checkpoints/{step}/weights.h5f", interval=10000),
+            FileLogger(self.model_path + "/last/dqn_log.json", interval=100),
+            WandbCallback()
+        ]
+        try:
+            bot.dqn.fit(env, callbacks=callbacks, nb_steps=self.episodes, visualize=False, verbose=1)
+        except BaseException:
+            print("Error while training")
 
         bot.model.save(self.model_path + "/last", overwrite=True)
 
@@ -135,6 +164,8 @@ class BotTrainer:
 
 
 def main():
+    wandb.init(project="train", entity="tobero")
+
     bot_trainer = BotTrainer(MODEL_PATH, EPISODES)
     bot_trainer.train_from_start()
 

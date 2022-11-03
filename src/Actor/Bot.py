@@ -10,8 +10,8 @@ from rl.policy import BoltzmannQPolicy
 from tensorflow import keras
 
 from src.Actor.BaseActor import BaseActor
-from ..Utils.Enums import BoardTile
-from ..Game import flatten_board
+from src.Utils.Enums import BoardTile
+from src.Game import flatten_board
 
 
 class Bot(BaseActor):
@@ -40,11 +40,11 @@ class Bot(BaseActor):
 
 
 def build_model(states, actions):
-    print(states)
     model = Sequential()
     model.add(Dense(48, activation='relu', input_shape=(1, int(states + 1))))
     model.add(Dense(24, activation='relu'))
     model.add(Dense(12, activation='relu'))
+    model.add(Dense(9, activation='relu'))
     model.add(Flatten())
     model.add(Dense(actions, activation='linear'))
 

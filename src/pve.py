@@ -7,7 +7,7 @@ from src.Actor.Player import Player
 from src.Game import GameEnv
 from src.Utils import Exceptions
 
-MODEL_PATH = "res/bot/500k/last"
+MODEL_PATH = "res/bot/1Mio/last"
 
 
 def hide_warnings():

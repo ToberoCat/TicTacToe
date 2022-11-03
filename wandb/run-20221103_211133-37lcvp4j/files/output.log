@@ -1,0 +1,266 @@
+C:\Users\Tobias\AppData\Local\Programs\Python\Python38\lib\site-packages\gym\logger.py:34: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize("%s: %s" % ("WARN", msg % args), "yellow"))
+C:\Users\Tobias\AppData\Local\Programs\Python\Python38\lib\site-packages\keras\engine\training_v1.py:2079: UserWarning: `Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+  updates=self.state_updates,
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ dense (Dense)               (None, 1, 48)             528
+ dense_1 (Dense)             (None, 1, 24)             1176
+ dense_2 (Dense)             (None, 1, 12)             300
+ dense_3 (Dense)             (None, 1, 9)              117
+ flatten (Flatten)           (None, 9)                 0
+ dense_4 (Dense)             (None, 9)                 90
+=================================================================
+Total params: 2,211
+Trainable params: 2,211
+Non-trainable params: 0
+_________________________________________________________________
+Training for 1000000.0 steps ...
+Interval 1 (0 steps performed)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10000/10000 [==============================] - 135s 13ms/step - reward: -0.4498
+1282 episodes - episode_reward: -3.505 [-30.010, 5.000] - loss: 1.326 - mae: 2.071 - mean_q: 0.833 - wins: 0.086 - draws: 0.061 - placed-items: 4.518
+Interval 2 (10000 steps performed)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10000/10000 [==============================] - 138s 14ms/step - reward: -0.1192
+1319 episodes - episode_reward: -0.900 [-20.010, 5.000] - loss: 0.822 - mae: 2.157 - mean_q: 2.075 - wins: 0.102 - draws: 0.050 - placed-items: 4.414
+Interval 3 (20000 steps performed)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10000/10000 [==============================] - 172s 17ms/step - reward: -0.1095
+Traceback (most recent call last):
+  File "C:\Users\Tobias\AppData\Local\Programs\Python\Python38\lib\runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\Tobias\AppData\Local\Programs\Python\Python38\lib\runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\Tobias\Desktop\Development\Python\TicTacToe\src\train_ai.py", line 172, in <module>
+    main()
+  File "C:\Users\Tobias\Desktop\Development\Python\TicTacToe\src\train_ai.py", line 168, in main
+    bot_trainer.train_from_start()
+  File "C:\Users\Tobias\Desktop\Development\Python\TicTacToe\src\train_ai.py", line 133, in train_from_start
+    self.__train(bot)
+  File "C:\Users\Tobias\Desktop\Development\Python\TicTacToe\src\train_ai.py", line 157, in __train
+    bot.dqn.fit(env, callbacks=callbacks, nb_steps=self.episodes, visualize=False, verbose=1)
+  File "C:\Users\Tobias\AppData\Local\Programs\Python\Python38\lib\site-packages\rl\core.py", line 165, in fit
+    callbacks.on_step_begin(episode_step)
+  File "C:\Users\Tobias\AppData\Local\Programs\Python\Python38\lib\site-packages\rl\callbacks.py", line 74, in on_step_begin
+    callback.on_step_begin(step, logs=logs)
+  File "C:\Users\Tobias\AppData\Local\Programs\Python\Python38\lib\site-packages\rl\callbacks.py", line 251, in on_step_begin
+    if not np.isnan(infos).all():  # not all values are means
+TypeError: ufunc 'isnan' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
