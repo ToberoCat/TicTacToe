@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\Tobias\AppData\Local\Programs\Python\Python38\lib\runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\Tobias\AppData\Local\Programs\Python\Python38\lib\runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\Tobias\Desktop\Development\Python\TicTacToe\src\train_ai.py", line 187, in <module>
+    continue_training()
+  File "C:\Users\Tobias\Desktop\Development\Python\TicTacToe\src\train_ai.py", line 181, in continue_training
+    bot_trainer = BotTrainer(MODEL_PATH, EPISODES, resume=True)
+TypeError: __init__() got an unexpected keyword argument 'resume'

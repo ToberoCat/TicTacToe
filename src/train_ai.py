@@ -22,7 +22,7 @@ LOSE_REWARD = -1
 DRAW_REWARD = -0.01
 INVALID_INPUT_REWARD = -5
 EPISODES = 1e6
-MODEL_PATH = "res/bot/1Mio"
+MODEL_PATH = "res/bot/1Mio_old"
 
 
 class TrainEnv(Env):
@@ -133,7 +133,11 @@ class BotTrainer:
         self.__train(bot)
 
     def continue_training(self):
-        bot = PretrainedBot(BoardTile.CROSS, 9, self.model_path + "/last")
+        bot = PretrainedBot(BoardTile.CROSS, 9, self.model_path, True)
+
+        items = sorted(list(map(lambda x: int(x), os.listdir(self.model_path + "/checkpoints"))))
+
+        self.episodes -= items[-1]
         self.__train(bot)
 
     def __train(self, bot: Bot):
@@ -144,7 +148,7 @@ class BotTrainer:
             os.makedirs(self.model_path + "/last")
 
         wandb.config = {
-            "episodes": EPISODES
+            "episodes": self.episodes
         }
 
         callbacks = [
@@ -170,5 +174,12 @@ def main():
     bot_trainer.train_from_start()
 
 
+def continue_training():
+    wandb.init(project="train", entity="tobero", resume=True)
+    bot_trainer = BotTrainer(MODEL_PATH, EPISODES)
+    bot_trainer.continue_training()
+
+
 if __name__ == "__main__":
-    main()
+    # main()
+    continue_training()

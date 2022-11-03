@@ -7,7 +7,7 @@ from src.Actor.Player import Player
 from src.Game import GameEnv
 from src.Utils import Exceptions
 
-MODEL_PATH = "res/bot/1Mio/last"
+MODEL_PATH = "res/bot/1Mio_old"
 
 
 def hide_warnings():
@@ -40,7 +40,7 @@ def main():
                     print("This is place is already taken")
                     continue
                 # Bot won't change the result unless the board gets modified.
-                # This is a infinite it loop prevention, but shouldn't happen with a properly trained bot
+                # This is an infinite it loops prevention, but shouldn't happen with a properly trained bot
                 print("Bot made a invalid input")
                 break
 

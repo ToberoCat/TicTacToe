@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6c1a8ec2-eaa9-4789-9990-28fd27d1c922" name="Changes" comment="* Added WandB&#10;* Added an 1 Mio Episodes Run&#10;* Best models will be saved now&#10;* Checkpoints are getting created&#10;* Log files containing metrics get created">
+      <change beforePath="$PROJECT_DIR$/res/bot/1Mio/best/best_weights.h5f.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/res/bot/1Mio/best/best_weights.h5f.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/bot/1Mio/best/best_weights.h5f.index" beforeDir="false" afterPath="$PROJECT_DIR$/res/bot/1Mio/best/best_weights.h5f.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/bot/1Mio/last/dqn_log.json" beforeDir="false" afterPath="$PROJECT_DIR$/res/bot/1Mio/last/dqn_log.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/bot/1Mio/last/saved_model.pb" beforeDir="false" afterPath="$PROJECT_DIR$/res/bot/1Mio/last/saved_model.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/bot/1Mio/last/variables/variables.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/res/bot/1Mio/last/variables/variables.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/bot/1Mio/last/variables/variables.index" beforeDir="false" afterPath="$PROJECT_DIR$/res/bot/1Mio/last/variables/variables.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Actor/Bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Actor/Bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pve.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pve.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/train_ai.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/train_ai.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20221103_212458-1dv139ky/files/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/wandb/run-20221103_212458-1dv139ky/files/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20221103_212458-1dv139ky/files/output.log" beforeDir="false" afterPath="$PROJECT_DIR$/wandb/run-20221103_212458-1dv139ky/files/output.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20221103_212458-1dv139ky/files/wandb-summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/wandb/run-20221103_212458-1dv139ky/files/wandb-summary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20221103_212458-1dv139ky/logs/debug-internal.log" beforeDir="false" afterPath="$PROJECT_DIR$/wandb/run-20221103_212458-1dv139ky/logs/debug-internal.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20221103_212458-1dv139ky/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/wandb/run-20221103_212458-1dv139ky/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wandb/run-20221103_212458-1dv139ky/run-1dv139ky.wandb" beforeDir="false" afterPath="$PROJECT_DIR$/wandb/run-20221103_212458-1dv139ky/run-1dv139ky.wandb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DarkyenusTimeTracker">
+    <option name="totalTimeSeconds" value="17749" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/venv/Lib/site-packages/rl/callbacks.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2F5ahlgUTCY9IMq4grY0rrmyndc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Tobias\Desktop\Development\Python\TicTacToe\src\tictactoe\Actor" />
+      <recent name="C:\Users\Tobias\Desktop\Development\Python\TicTacToe\src\tictactoe\Rl" />
+      <recent name="C:\Users\Tobias\Desktop\Development\Python\TicTacToe\src\tictactoe" />
+      <recent name="C:\Users\Tobias\Desktop\Development\Python\TicTacToe\res" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Tobias\Desktop\Development\Python\TicTacToe\src" />
+      <recent name="C:\Users\Tobias\Desktop\Development\Python\TicTacToe\src\Actor" />
+      <recent name="C:\Users\Tobias\Desktop\Development\Python\TicTacToe\src\Actor\AI" />
+      <recent name="C:\Users\Tobias\Desktop\Development\Python\TicTacToe\src\tictactoe" />
+      <recent name="C:\Users\Tobias\Desktop\Development\Python\TicTacToe\src\tictactoe\Environment" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.cool">
+    <configuration name="cool" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TicTacToe" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/cool.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pve" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TicTacToe" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/pve.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train_ai" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TicTacToe" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/tictactoe" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/tictactoe/train_ai.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.cool" />
+        <item itemvalue="Python.pve" />
+        <item itemvalue="Python.train_ai" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6c1a8ec2-eaa9-4789-9990-28fd27d1c922" name="Changes" comment="" />
+      <created>1663784519533</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663784519533</updated>
+      <workItem from="1663784521905" duration="4964000" />
+      <workItem from="1663857983372" duration="2034000" />
+      <workItem from="1663860065134" duration="41000" />
+      <workItem from="1663868091824" duration="409000" />
+      <workItem from="1664793798125" duration="493000" />
+      <workItem from="1664794768570" duration="74000" />
+      <workItem from="1664903714497" duration="604000" />
+      <workItem from="1665755837817" duration="31000" />
+      <workItem from="1667493215271" duration="8311000" />
+      <workItem from="1667501794147" duration="2436000" />
+      <workItem from="1667506789768" duration="1688000" />
+      <workItem from="1667512023965" duration="1834000" />
+    </task>
+    <task id="LOCAL-00001" summary="* Added WandB&#10;* Added an 1 Mio Episodes Run&#10;* Best models will be saved now&#10;* Checkpoints are getting created&#10;* Log files containing metrics get created">
+      <created>1667508747309</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667508747309</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="* Added WandB&#10;* Added an 1 Mio Episodes Run&#10;* Best models will be saved now&#10;* Checkpoints are getting created&#10;* Log files containing metrics get created" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Added WandB&#10;* Added an 1 Mio Episodes Run&#10;* Best models will be saved now&#10;* Checkpoints are getting created&#10;* Log files containing metrics get created" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/train_ai_py$pve.coverage" NAME="pve Coverage Results" MODIFIED="1664903783978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/TicTacToe$train_ai.coverage" NAME="train_ai Coverage Results" MODIFIED="1663788899386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tictactoe" />
+    <SUITE FILE_PATH="coverage/TicTacToe$pve.coverage" NAME="pve Coverage Results" MODIFIED="1664793833231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/train_ai_py$cool.coverage" NAME="cool Coverage Results" MODIFIED="1667496745741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+  </component>
+</project>

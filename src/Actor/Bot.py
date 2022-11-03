@@ -57,5 +57,9 @@ class TrainingBot(Bot):
 
 
 class PretrainedBot(Bot):
-    def __init__(self, board_tile: BoardTile, actions, last_model):
-        super().__init__(board_tile, keras.models.load_model(last_model), actions)
+    def __init__(self, board_tile: BoardTile, actions, model_path, resume=False):
+        super().__init__(board_tile, keras.models.load_model(model_path + "/last"), actions)
+
+        if resume:
+            return
+        self.dqn.load_weights(model_path + "/best/best_weights.h5f")
