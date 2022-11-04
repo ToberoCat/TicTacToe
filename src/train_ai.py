@@ -19,7 +19,7 @@ from src.Utils import Exceptions
 NO_REWARD = 0
 WON_REWARD = 1
 LOSE_REWARD = -1
-DRAW_REWARD = -0.01
+DRAW_REWARD = 0.0001
 INVALID_INPUT_REWARD = -5
 EPISODES = 1e6
 MODEL_PATH = "res/bot/1Mio_old"
@@ -54,7 +54,7 @@ class TrainEnv(Env):
         done = False
         state = self.game.check_game_state(current_tile).value
         if state == GameState.WON.value:
-            reward += 9 + WON_REWARD - self.counter
+            reward += WON_REWARD
             info["wins"] = 1
             done = True
         elif state == GameState.DRAW.value:

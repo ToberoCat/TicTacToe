@@ -1,22 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c1a8ec2-eaa9-4789-9990-28fd27d1c922" name="Changes" comment="* Added WandB&#10;* Added an 1 Mio Episodes Run&#10;* Best models will be saved now&#10;* Checkpoints are getting created&#10;* Log files containing metrics get created">
-      <change beforePath="$PROJECT_DIR$/res/bot/1Mio/best/best_weights.h5f.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/res/bot/1Mio/best/best_weights.h5f.data-00000-of-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/bot/1Mio/best/best_weights.h5f.index" beforeDir="false" afterPath="$PROJECT_DIR$/res/bot/1Mio/best/best_weights.h5f.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/bot/1Mio/last/dqn_log.json" beforeDir="false" afterPath="$PROJECT_DIR$/res/bot/1Mio/last/dqn_log.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/bot/1Mio/last/saved_model.pb" beforeDir="false" afterPath="$PROJECT_DIR$/res/bot/1Mio/last/saved_model.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/bot/1Mio/last/variables/variables.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/res/bot/1Mio/last/variables/variables.data-00000-of-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/bot/1Mio/last/variables/variables.index" beforeDir="false" afterPath="$PROJECT_DIR$/res/bot/1Mio/last/variables/variables.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Actor/Bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Actor/Bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pve.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pve.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/train_ai.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/train_ai.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wandb/run-20221103_212458-1dv139ky/files/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/wandb/run-20221103_212458-1dv139ky/files/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wandb/run-20221103_212458-1dv139ky/files/output.log" beforeDir="false" afterPath="$PROJECT_DIR$/wandb/run-20221103_212458-1dv139ky/files/output.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wandb/run-20221103_212458-1dv139ky/files/wandb-summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/wandb/run-20221103_212458-1dv139ky/files/wandb-summary.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wandb/run-20221103_212458-1dv139ky/logs/debug-internal.log" beforeDir="false" afterPath="$PROJECT_DIR$/wandb/run-20221103_212458-1dv139ky/logs/debug-internal.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wandb/run-20221103_212458-1dv139ky/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/wandb/run-20221103_212458-1dv139ky/logs/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wandb/run-20221103_212458-1dv139ky/run-1dv139ky.wandb" beforeDir="false" afterPath="$PROJECT_DIR$/wandb/run-20221103_212458-1dv139ky/run-1dv139ky.wandb" afterDir="false" />
+    <list default="true" id="6c1a8ec2-eaa9-4789-9990-28fd27d1c922" name="Changes" comment="removed wandb">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="17749" />
+    <option name="totalTimeSeconds" value="21112" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -78,7 +64,7 @@
       <recent name="C:\Users\Tobias\Desktop\Development\Python\TicTacToe\src\tictactoe\Environment" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.cool">
+  <component name="RunManager" selected="Python.pve">
     <configuration name="cool" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TicTacToe" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -123,6 +109,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pvp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TicTacToe" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/pvp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="train_ai" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TicTacToe" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -147,8 +155,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.cool" />
         <item itemvalue="Python.pve" />
+        <item itemvalue="Python.pvp" />
+        <item itemvalue="Python.cool" />
         <item itemvalue="Python.train_ai" />
       </list>
     </recent_temporary>
@@ -172,7 +181,9 @@
       <workItem from="1667493215271" duration="8311000" />
       <workItem from="1667501794147" duration="2436000" />
       <workItem from="1667506789768" duration="1688000" />
-      <workItem from="1667512023965" duration="1834000" />
+      <workItem from="1667512023965" duration="2023000" />
+      <workItem from="1667584142869" duration="3673000" />
+      <workItem from="1667589542463" duration="74000" />
     </task>
     <task id="LOCAL-00001" summary="* Added WandB&#10;* Added an 1 Mio Episodes Run&#10;* Best models will be saved now&#10;* Checkpoints are getting created&#10;* Log files containing metrics get created">
       <created>1667508747309</created>
@@ -181,7 +192,35 @@
       <option name="project" value="LOCAL" />
       <updated>1667508747309</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added a continue training option">
+      <created>1667513964681</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667513964681</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Uploaded checkpoints">
+      <created>1667513987721</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667513987721</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added gui">
+      <created>1667587016980</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667587016980</updated>
+    </task>
+    <task id="LOCAL-00005" summary="removed wandb">
+      <created>1667587140589</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667587140589</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,10 +239,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="* Added WandB&#10;* Added an 1 Mio Episodes Run&#10;* Best models will be saved now&#10;* Checkpoints are getting created&#10;* Log files containing metrics get created" />
-    <option name="LAST_COMMIT_MESSAGE" value="* Added WandB&#10;* Added an 1 Mio Episodes Run&#10;* Best models will be saved now&#10;* Checkpoints are getting created&#10;* Log files containing metrics get created" />
+    <MESSAGE value="Added a continue training option" />
+    <MESSAGE value="Uploaded checkpoints" />
+    <MESSAGE value="Added gui" />
+    <MESSAGE value="removed wandb" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed wandb" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/train_ai_py$pve.coverage" NAME="pve Coverage Results" MODIFIED="1664903783978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/train_ai_py$pvp.coverage" NAME="pvp Coverage Results" MODIFIED="1667586312101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/train_ai_py$pve.coverage" NAME="pve Coverage Results" MODIFIED="1667586566808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/TicTacToe$train_ai.coverage" NAME="train_ai Coverage Results" MODIFIED="1663788899386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tictactoe" />
     <SUITE FILE_PATH="coverage/TicTacToe$pve.coverage" NAME="pve Coverage Results" MODIFIED="1664793833231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/train_ai_py$cool.coverage" NAME="cool Coverage Results" MODIFIED="1667496745741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />

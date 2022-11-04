@@ -80,6 +80,12 @@ class GameEnv:
         return GameState.DRAW
 
 
+def get_symbol(board_tile: BoardTile):
+    if board_tile is None:
+        return ""
+    return MAPPINGS[board_tile.value]
+
+
 def flatten_board(board, mark):
     lst = list(map(lambda tile: tile.value, [item for sublist in board for item in sublist]))
     lst.append(mark.value)
