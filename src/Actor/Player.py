@@ -25,3 +25,13 @@ class Player(BaseActor):
                 return x, y
             except ValueError:
                 print(f"You haven't entered a valid x / y coordinate")
+
+
+class GuiPlayer(BaseActor):
+    def __init__(self, board_tile: BoardTile, x, y):
+        super().__init__(board_tile)
+        self.x = x
+        self.y = y
+
+    def request(self) -> tuple:
+        return self.x, self.y
