@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c1a8ec2-eaa9-4789-9990-28fd27d1c922" name="Changes" comment="Uploaded checkpoints">
-      <change afterPath="$PROJECT_DIR$/src/Window.py" afterDir="false" />
+    <list default="true" id="6c1a8ec2-eaa9-4789-9990-28fd27d1c922" name="Changes" comment="removed wandb">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Actor/Player.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Actor/Player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pve.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pve.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pvp.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pvp.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="20355" />
+    <option name="totalTimeSeconds" value="21112" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -187,7 +182,8 @@
       <workItem from="1667501794147" duration="2436000" />
       <workItem from="1667506789768" duration="1688000" />
       <workItem from="1667512023965" duration="2023000" />
-      <workItem from="1667584142869" duration="2450000" />
+      <workItem from="1667584142869" duration="3673000" />
+      <workItem from="1667589542463" duration="74000" />
     </task>
     <task id="LOCAL-00001" summary="* Added WandB&#10;* Added an 1 Mio Episodes Run&#10;* Best models will be saved now&#10;* Checkpoints are getting created&#10;* Log files containing metrics get created">
       <created>1667508747309</created>
@@ -210,7 +206,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667513987721</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added gui">
+      <created>1667587016980</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667587016980</updated>
+    </task>
+    <task id="LOCAL-00005" summary="removed wandb">
+      <created>1667587140589</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667587140589</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,7 +241,9 @@
     <MESSAGE value="* Added WandB&#10;* Added an 1 Mio Episodes Run&#10;* Best models will be saved now&#10;* Checkpoints are getting created&#10;* Log files containing metrics get created" />
     <MESSAGE value="Added a continue training option" />
     <MESSAGE value="Uploaded checkpoints" />
-    <option name="LAST_COMMIT_MESSAGE" value="Uploaded checkpoints" />
+    <MESSAGE value="Added gui" />
+    <MESSAGE value="removed wandb" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed wandb" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/train_ai_py$pvp.coverage" NAME="pvp Coverage Results" MODIFIED="1667586312101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
